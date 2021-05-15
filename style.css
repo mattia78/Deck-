@@ -1,0 +1,252 @@
+body {
+	display: flex;
+	background: #060ab2;
+}
+
+.main-game {
+	width: 1670px;
+	display: flex;
+	flex-wrap: wrap;
+	perspective: 1000px;
+}
+
+.game-card {
+	height: 280px;
+	width: 157px;
+	border: solid 0px lime;
+	position: relative;
+	transform-style: preserve-3d;
+	transition: transform .5s;
+}
+
+img:active {
+	transform: scale(0.9);
+	transition: 0.2s;
+}
+
+.game-card.flip {
+	transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+	width: 100%;
+	height: 100%;
+	border-radius: 1px;
+	background: #1c7ccc;
+	position: absolute;
+	backface-visibility: hidden;
+}
+
+.front-face {
+	transform: rotateY(180deg);
+}
+
+
+
+/* funzione sprite per visualizzare solo una parte della grande immagine con tutte le carte */
+.b1 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) 0 0;
+}
+.b2 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) -155px 0;
+}
+#b3 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) -310px 0;
+}
+#b4 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) -465px 0;
+}
+#b5 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) -620px 0;
+}
+#b6 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) -775px 0;
+}
+#b7 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) -930px 0;
+}
+#b8 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) -1085px 0;
+}
+#b9 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) -1240px 0;
+}
+#b10 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) -1390px 0;
+}
+
+#s1 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) 0 -280px;
+}
+#s2 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) -155px -280px;
+}
+#s3 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) -310px -280px;
+}
+#s4 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) -465px -280px;
+}
+#s5 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) -615px -280px;
+}
+#s6 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) -775px -280px;
+}
+#s7 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) -930px -280px;
+}
+#s8 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) -1085px -280px;
+}
+#s9 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) -1240px -280px;
+}
+#s10 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) -1390px -280px;
+}
+
+#c1 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) 0 -560px;
+}
+#c2 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) -155px -560px;
+}
+#c3 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) -310px -560px;
+}
+#c4 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) -465px -560px;
+}
+#c5 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) -620px -560px;
+}
+#c6 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) -775px -560px;
+}
+#c7 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) -930px -560px;
+}
+#c8 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) -1085px -560px;
+}
+#c9 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) -1240px -560px;
+}
+#c10 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) -1395px -560px;
+}
+
+#o1 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) 0 -840px;
+}
+#o2 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) -155px -840px;
+}
+#o3 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) -310px -840px;
+}
+#o4 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) -465px -840px;
+}
+#o5 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) -620px -840px;
+}
+#o6 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) -775px -840px;
+}
+#o7 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) -930px -840px;
+}
+#o8 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) -1085px -840px;
+}
+#o9 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) -1240px -840px;
+}
+#o10 {
+	width: 157px;
+	height: 280px;
+	background: url(cards_resized.png) -1395px -840px;
+}
+
+
